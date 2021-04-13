@@ -1,0 +1,40 @@
+.inc{
+    margin: 0 10px 0 10px;
+    width: 80px;
+    height: 40px;
+    border:none;
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(194, 200, 209);
+
+}
+.inc:hover{
+    background-color: rgb(8, 53, 73);
+}
+
+.reset{
+    margin: 0 10px 0 10px;
+    width: 80px;
+    height: 40px;
+    border:none;
+    color: black;
+    border: 1px solid black;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.noneReset{
+    margin: 0 10px 0 10px;
+    width: 80px;
+    height: 40px;
+    border:none;
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(194, 200, 209);
+}

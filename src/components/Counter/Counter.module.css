@@ -1,18 +1,20 @@
-.block{
+.allBlock{
     display: flex;
     justify-content: center;
-    margin-left: 40%;
-    margin-top: 200px;
-    flex-direction: column;
-    border: 3px solid blueviolet;
+    margin: 200px 0 0 0;
+}
+
+
+.block{
+    border: 3px solid teal;
     border-radius: 10px;
-    background-color: rgb(150, 125, 173);
-    width: 200px;
-    height: 100px;
+    background-color: rgb(22, 80, 80);
+    width: 300px;
+    height: 200px;
 }
 .stateBlock{
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin: 60px 0 0 50%;
 }

@@ -3,32 +3,33 @@ import classes from './SetComponent.module.css'
 
 type SetComponentType = {
     state: number
-    addState: (title: any) => void
+    addState: (max: number) => void
 }
 
 
 function SetComponent(props: SetComponentType) {
 
-    const [title, setTitle] = useState<any>(0)
+    const [max, setMax] = useState(0)
 
 
-    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setTitle(e.currentTarget.value)
+    const onChangeMaxHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        setMax(e.currentTarget.valueAsNumber)
     }
 
-    function addState() {
-        props.addState(title)
+    function addState(er: number) {
+        setMax(props.addState(er))
     }
+
 
     return (
         <div>
             <div className={classes.stateMenu}>
                 <div>
-                    max value : <input value={title} onChange={onChangeHandler} />
-                    start value: <input type="text" />
+                    max value : <input value={max} onChange={onChangeMaxHandler} />
+                    {/* start value: <input value={start} onChange={onChangeStartHandler} /> */}
                 </div>
                 <div>
-                    <button onClick={() => addState}>set</button>
+                    <button onClick={() => addState(max)}>set</button>
                 </div>
             </div>
         </div>

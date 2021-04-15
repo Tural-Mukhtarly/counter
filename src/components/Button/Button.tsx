@@ -5,9 +5,11 @@ type ButtonTypes = {
     state: number
     handleClick: () => void
     clearState: () => void
+    
 }
 
 function Button(props: ButtonTypes) {
+    
     function disabledButton() {
         if (props.state === 5) {
             return true

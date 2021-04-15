@@ -6,7 +6,7 @@ type CounterType = {
     handleClick: () => void
     clearState: () => void
     state: number
-    addState: (title: any) => void
+    addState: (max: number) => void
 }
 
 function Table(props: CounterType) {

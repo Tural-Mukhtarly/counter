@@ -1,17 +1,24 @@
 import React, { useState } from 'react'
 import Counter from './components/Counter/Counter';
 
+
+
 function App() {
 
-  const [state, setState] = useState<number>(0)
+  const [state, setState] = useState<number>(5)
+
   const handleClick = () => setState(prev => prev + 1)
   const clearState = () => setState(0)
 
-  function addState(title: any) {
-    setState(20)
+  function addState(max: number) {
+    let fer = max
+    setState(fer)
   }
 
-  console.log(state);
+
+
+
+
 
   return (
     <div className="App">
@@ -19,5 +26,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

@@ -1,35 +1,32 @@
-import React, { useState, ChangeEvent } from 'react'
+import { Button, TextField } from '@material-ui/core'
+import React, { ChangeEvent } from 'react'
 import classes from './SetComponent.module.css'
 
+
+
 type SetComponentType = {
-    state: number
+    startState: number
     addState: (max: number) => void
+    start: number
+    onChangeStartHandler: (e: ChangeEvent<HTMLInputElement>) => void
+    max: number
+    onChangeMaxtHandler: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-
 function SetComponent(props: SetComponentType) {
-
-    const [max, setMax] = useState(0)
-
-
-    const onChangeMaxHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setMax(e.currentTarget.valueAsNumber)
-    }
-
-    // function addState(er: number) {
-    //     setMax(props.addState(er))
-    // }
 
 
     return (
         <div>
             <div className={classes.stateMenu}>
                 <div>
-                    max value : <input value={max} onChange={onChangeMaxHandler} />
-                    {/* start value: <input value={start} onChange={onChangeStartHandler} /> */}
+                    <form>
+                        Start value : <TextField color="secondary" type="number" value={props.start} onChange={props.onChangeStartHandler} ></TextField>
+                        Max value: <TextField color="secondary" type="number" value={props.max} onChange={props.onChangeMaxtHandler} ></TextField>
+                    </form>
                 </div>
                 <div>
-                    <button onClick={() => props.addState(max)}>set</button>
+                    <Button variant="outlined" color="secondary" onClick={() => props.addState(props.start)}>set</Button>
                 </div>
             </div>
         </div>

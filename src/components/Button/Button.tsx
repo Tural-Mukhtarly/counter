@@ -5,13 +5,13 @@ type ButtonTypes = {
     state: number
     handleClick: () => void
     clearState: () => void
-    
+    max: number
 }
 
 function Button(props: ButtonTypes) {
-    
+
     function disabledButton() {
-        if (props.state === 5) {
+        if (props.state === props.max) {
             return true
         }
     }

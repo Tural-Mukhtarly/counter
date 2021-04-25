@@ -11,13 +11,8 @@ function App() {
   const clearState = () => setState(0)
 
   function addState(max: number) {
-    let fer = max
-    setState(fer)
+    setState(max)
   }
-
-
-
-
 
 
   return (

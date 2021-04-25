@@ -16,9 +16,9 @@ function SetComponent(props: SetComponentType) {
         setMax(e.currentTarget.valueAsNumber)
     }
 
-    function addState(er: number) {
-        setMax(props.addState(er))
-    }
+    // function addState(er: number) {
+    //     setMax(props.addState(er))
+    // }
 
 
     return (
@@ -29,7 +29,7 @@ function SetComponent(props: SetComponentType) {
                     {/* start value: <input value={start} onChange={onChangeStartHandler} /> */}
                 </div>
                 <div>
-                    <button onClick={() => addState(max)}>set</button>
+                    <button onClick={() => props.addState(max)}>set</button>
                 </div>
             </div>
         </div>

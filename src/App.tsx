@@ -3,20 +3,20 @@ import Counter from './components/Counter/Counter';
 
 function App() {
 
-
   const [startState, setStartState] = useState<number>(0)
   const [start, setStart] = useState<number>(0)
   const [max, setmax] = useState<number>(0)
 
-  console.log(max);
-
-
+  const [state, setstate] = useState([
+    { start: 0, max: 5, maxValue: 10, disabled: false }
+  ])
 
   const handleClick = () => setStartState(prev => prev + 1)
   const clearState = () => setStartState(start)
 
-  function addState(max: number) {
-    setStartState(max)
+  function addState(start: number, max: number) {
+    setStartState(start)
+    setmax(max)
   }
 
   const onChangeStartHandler = (e: ChangeEvent<HTMLInputElement>) => {

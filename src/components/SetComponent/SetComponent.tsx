@@ -6,7 +6,7 @@ import classes from './SetComponent.module.css'
 
 type SetComponentType = {
     startState: number
-    addState: (max: number) => void
+    addState: (start: number, max: number) => void
     start: number
     onChangeStartHandler: (e: ChangeEvent<HTMLInputElement>) => void
     max: number
@@ -26,7 +26,7 @@ function SetComponent(props: SetComponentType) {
                     </form>
                 </div>
                 <div>
-                    <Button variant="outlined" color="secondary" onClick={() => props.addState(props.start)}>set</Button>
+                    <Button variant="outlined" color="secondary" onClick={props.addState()}>set</Button>
                 </div>
             </div>
         </div>

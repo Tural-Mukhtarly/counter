@@ -3,7 +3,6 @@ import React, { ChangeEvent } from 'react'
 import classes from './SetComponent.module.css'
 
 
-
 type SetComponentType = {
     startState: number
     addState: (start: number, max: number) => void

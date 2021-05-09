@@ -18,7 +18,7 @@ function App() {
     setStartState(start)
     setmax(max)
   }
-// sdfghjk
+
   const onChangeStartHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setStart(e.currentTarget.valueAsNumber)
   }

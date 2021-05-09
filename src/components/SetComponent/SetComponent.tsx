@@ -1,7 +1,6 @@
-import { Button, TextField } from '@material-ui/core'
 import React, { ChangeEvent } from 'react'
+import { Button, TextField } from '@material-ui/core'
 import classes from './SetComponent.module.css'
-
 
 type SetComponentType = {
     startState: number
@@ -25,7 +24,7 @@ function SetComponent(props: SetComponentType) {
                     </form>
                 </div>
                 <div>
-                    <Button variant="outlined" color="secondary" onClick={props.addState()}>set</Button>
+                    {/* <Button variant="outlined" color="secondary" onClick={props.addState()}>set</Button> */}
                 </div>
             </div>
         </div>

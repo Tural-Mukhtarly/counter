@@ -1,0 +1,39 @@
+.counterContainer{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sm{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+.sm button{
+    width: 180px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border: 2px solid rgb(39, 64, 204);
+}
+
+.counter{
+    width: 200px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.counter button{
+    margin: 6px 0 4px 0;
+    border-radius: 20px;
+}
+.value{
+    text-align: center;
+    height: 100px;
+    color: rgb(39, 64, 204);
+    /* border: 2px solid rgb(39, 64, 204); */
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(39, 64, 204);
+}

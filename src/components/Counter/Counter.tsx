@@ -24,7 +24,6 @@ function Counter() {
 
     return (
         <div className={s.counterContainer}>
-            
             <div className={s.sm}>
                 <div className={s.startBlock}>
                     <TextField placeholder="Start"></TextField>
@@ -33,6 +32,7 @@ function Counter() {
                 <div className={s.maxBlock}>
                     <TextField placeholder="Max"></TextField>
                     <Button variant="outlined" color="primary">Max</Button>
+                    <div></div>
                 </div>
             </div>
 

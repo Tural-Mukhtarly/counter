@@ -38,9 +38,7 @@ if (persistedStateString) {
     preState = JSON.parse(persistedStateString)
 }
 
-
 export const store = createStore(CounterReducer,preState)
-
 
 
 store.subscribe(() => {

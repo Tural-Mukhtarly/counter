@@ -19,7 +19,7 @@
 }
 
 .counter{
-    width: 200px;
+    width: 240px;
     font-size: 30px;
     font-weight: 600;
     display: flex;
@@ -33,7 +33,11 @@
     text-align: center;
     height: 100px;
     color: rgb(39, 64, 204);
-    /* border: 2px solid rgb(39, 64, 204); */
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px rgb(39, 64, 204);
+}
+h2{
+    text-align: center;
+    color: rgb(88, 88, 247);
+    text-shadow: 1px 1px 1px lightblue;
 }
